@@ -1,12 +1,12 @@
 Summary:	Simple unit testing framework for handling automated tests in C
 Summary(pl.UTF-8):	Szkielet automatycznych testów jednostkowych dla języka C
 Name:		cu
-Version:	0.14.2
+Version:	0.15.1
 Release:	1
 License:	BSD
 Group:		Development/Libraries
 Source0:	http://cu.danfis.cz/files/%{name}-%{version}.tar.gz
-# Source0-md5:	fec662045ff1fd1d353fa93865abc80c
+# Source0-md5:	bd5f70ea6f06e2a050c7e5e280043927
 URL:		http://cu.danfis.cz/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
