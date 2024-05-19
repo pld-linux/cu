@@ -12,6 +12,8 @@ URL:		https://github.com/danfis/cu
 BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_debugsource_packages	0
+
 %description
 CU is simple unit testing framework for handling automated tests in C.
 CU provides a simple interface for defining unit tests using macros.
