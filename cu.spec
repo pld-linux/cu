@@ -2,12 +2,14 @@ Summary:	Simple unit testing framework for handling automated tests in C
 Summary(pl.UTF-8):	Szkielet automatycznych testów jednostkowych dla języka C
 Name:		cu
 Version:	0.15.1
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Libraries
+#Source0Download: https://github.com/danfis/cu/tags
 Source0:	http://cu.danfis.cz/files/%{name}-%{version}.tar.gz
 # Source0-md5:	bd5f70ea6f06e2a050c7e5e280043927
-URL:		http://cu.danfis.cz/
+URL:		https://github.com/danfis/cu
+BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -29,6 +31,8 @@ wyjście zestawów testów.
 
 %prep
 %setup -q
+
+%{__sed} -i -e '1s,/usr/bin/python$,%{__python3},' cu-check-regressions
 
 %build
 %{__make} \
